@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+
+        <!--Calculator screen-->
+
+        <div class="screenCalc" >
+            <input type="text" id="screen" placeholder="0">
+        </div>
+
+        <!--Numbers an keys-->
+        <div class="buttons">
+            <button onclick="clearScr()" class="operators">AC</button>
+            <button class="operators">DEL</button>
+            <button onClick="btnClick('%')" class="operators" value="%">%</button>
+            <button onClick="btnClick('/')" class="operators" value="/" >/</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="btnClick(7)">7</button>
+            <button onclick="btnClick(8)">8</button>
+            <button onclick="btnClick(9)" >9</button>
+            <button onclick="btnClick('x')" class="operators" >X</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="btnClick(4)" >4</button>
+            <button onclick="btnClick(5)" >5</button>
+            <button onclick="btnClick(6)">6</button>
+            <button onclick="btnClick('-')" class="operators" >-</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="btnClick(1)" >1</button>
+            <button onclick="btnClick(2)">2</button>
+            <button onclick="btnClick(3)" >3</button>
+            <button onclick="btnClick('+')" class="operators">+</button>
+        </div>
+
+        <div class="buttons">
+            <button onclick="btnClick('00')" >00</button>
+            <button onclick="btnClick(0)">0</button>
+            <button onclick="btnClick('.')">.</button>
+            <button onclick="equalClick()"class="equalBtn">=</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
